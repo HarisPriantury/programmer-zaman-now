@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class javascript</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        //membuat constructor
+        constructor(name) {
+          //menambahkan property
+          this.name = name;
+          //   this.sayHello = function (nama) {
+          //     console.log(`hello ${nama}my name is ${this.name}`);
+          //   };
+        }
+        //prototype
+        sayHello(name) {
+          console.info(`hello ${name}my name is ${this.name}`);
+        }
+      }
+      const eko = new Person("eko");
+      console.info(eko);
+      const budi = new Person("budi");
+      console.log(budi);
+      eko.sayHello("joko");
+    </script>
+  </body>
+</html>

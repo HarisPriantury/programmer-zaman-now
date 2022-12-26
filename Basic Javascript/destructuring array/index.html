@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring Array</title>
+  </head>
+  <body>
+    <script>
+      const names = ["haris", "priantury", "julina", "sapta", "pradita"];
+
+      const [firstName, middleName, lastName, ...other] = names;
+
+      console.log(firstName);
+      console.log(lastName);
+      console.log(middleName);
+      console.log(...other);
+
+      const person = {
+        firstName: "Eko",
+        lastName: "khannedy",
+        adress: {
+          street: "jalan belum ada",
+          city: "kebumen",
+        },
+      };
+      const {
+        adress: { street, city, kota = "kebumen" },
+      } = person;
+      console.log(street);
+      console.log(city);
+    </script>
+  </body>
+</html>

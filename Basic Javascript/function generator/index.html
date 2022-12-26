@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function generator</title>
+  </head>
+  <body>
+    <script>
+      function* createNames() {
+        yield "Eko";
+        yield "kurniawan";
+        yield "khannedy";
+      }
+      const names = createNames();
+      for (const m of names) {
+        console.log(m);
+      }
+
+      //
+      //komplex
+
+      //generator buat ganjil
+      function* ganjil(value) {
+        for (let i = 0; i < value; i++) {
+          if (i % 2 == 1) {
+            yield i;
+          }
+        }
+      }
+      const angkaGanjil = ganjil(100);
+      for (const r of angkaGanjil) {
+        console.log(r);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonymous Function</title>
+  </head>
+  <body>
+    <script>
+      //hanya harus dimasukan kedalam variable
+      //dana parameter
+
+      const say = function (nama) {
+        console.log(`hello ${nama}`);
+      };
+      say("eko");
+      say("budi");
+
+      function giveMeName(callback) {
+        callback("eko");
+      }
+      giveMeName(function (name) {
+        console.log(`hi ${name}`);
+      });
+    </script>
+  </body>
+</html>

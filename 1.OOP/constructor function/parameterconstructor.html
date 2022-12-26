@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parameter constructor function</title>
+  </head>
+  <body>
+    <script>
+      function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.sayHello = function (nama) {
+          console.info(`hello ${nama},my name is ${this.firstName} ${this.lastName}`);
+        };
+      }
+      const eko = new Person("eko", "Khannedy");
+      eko.sayHello("joko");
+      const budi = new Person("budi", "Nugraha");
+      budi.sayHello("joko");
+      console.log(eko);
+      console.log(budi);
+    </script>
+  </body>
+</html>

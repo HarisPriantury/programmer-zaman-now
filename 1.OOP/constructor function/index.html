@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructor function</title>
+  </head>
+  <body>
+    <script>
+      //constructor function adalah metode membuat cetakan objek versi lama sebelum es6,dengan menggunakan function Object
+
+      function Person() {
+        this.firstName = "";
+        this.lastName = "";
+        this.sayHello = function (nama) {
+          console.info(`hello ${nama}, my name is ${this.firstName}`);
+        };
+      }
+
+      const eko = new Person();
+      eko.firstName = "Eko";
+      eko.lastName = "Khannedy";
+      eko.sayHello("joko");
+
+      const budi = new Person();
+      budi.firstName = "budi";
+      budi.lastName = "Nugraga";
+      budi.sayHello("joko");
+
+      console.log(eko);
+      console.log(budi);
+    </script>
+  </body>
+</html>
